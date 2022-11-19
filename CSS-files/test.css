@@ -1,0 +1,330 @@
+/* #Stacey {
+  border: 2px outset #ae49f1;
+  border-radius: 50%;
+  background: url(Stacey1.jpg);
+  float: left;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: bottom 0px right -60px;
+  margin: 20px;
+  box-shadow: 10px 5px 20px #615667;
+} */
+
+
+
+
+
+
+.fancy {
+  position: static;
+  background-color: #FFC;
+  padding: 2rem;
+  text-align: center;
+  max-width: 200px;
+}
+
+.fancy::before {
+  content: "";
+
+  position : absolute;
+  z-index  : -1;
+  bottom   : 15px;
+  right    : 5px;
+  width    : 50%;
+  top      : 80%;
+  max-width: 200px;
+
+  box-shadow: 0px 13px 10px black;
+  transform: rotate(4deg);
+}
+
+#content {
+  background-size: cover;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+
+
+
+
+
+/*
+      @media screen and (max-width:600px) {
+        .column {
+          width: 100%;
+          }
+        } 
+
+  #Stacey {
+    border: 2px outset #ae49f1;
+    border-radius: 50%;
+    background: url(Stacey1.jpg);
+    float: left;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: bottom 0px right -60px;
+    margin: 20px;
+    box-shadow: 10px 5px 20px #615667;
+  }
+
+header.name {
+    padding-top: 40px;
+    float: center;
+    }
+
+ /*Styles the boxes behind BIO, SKILLS & EXPERIENCE.*/
+ /*
+.myDiv {
+    float: left;
+    width: 30%;
+    height: 300px;
+    border: 3px outset #ae49f1;
+    background-color: rgb(179, 176, 180);    
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    overflow: auto;
+    }
+
+  
+  body {font-family: 'Montserrat';font-size: 22px;}
+  
+  * {box-sizing: border-box}*/
+  
+  /*Styles the WEB skills % background slide bars.*/
+  /*
+  .container {
+  width: 40%; height: 30px;
+  background-color: #ddd;}
+
+
+ /*Styles the WEB skills % purple slide bars.*/
+ /* .skills {
+  height: 30px;
+  text-align: right;
+  padding-top: 3px;
+  padding-bottom: 6px;
+  color: white;}
+ 
+  .html {width: 10%; background-color: #ae49f1;}
+  .css {width: 10%; background-color: #ae49f1;}
+  .js {width: 0%; background-color: #ae49f1;}
+  .php {width: 0%; background-color: #ae49f1;}
+  
+    
+    .column {
+      float: left;
+      width: 33.33%;
+      height: auto;
+      padding: 15px;
+      background-color: rgba(245, 245, 245, 0.81);
+    }
+    
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+      }
+  
+
+    footer {
+            text-align: center;
+            background-color: rgb(179, 176, 180);
+            padding-top: 10px;
+            padding-bottom: 10px;
+      
+          }      */
+
+
+
+
+
+
+/* Hamburger menu */
+.menu {
+  display: flex;
+  list-style: none;
+  padding-left: 5px;
+  margin: 15px;
+}
+
+/* Hide the hamburger menu at full-width */
+#hamburger {
+  display: none;
+}
+
+.orange {
+  color: #d15908;
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  #hamburger {
+    display: block;
+    font-size: 3rem;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+/* format the menus */
+#hamburger {
+  cursor: pointer;
+}
+
+.menu li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.horizontal li {
+  padding-right: 20px;
+}
+
+.vertical {
+  margin: 0;
+}
+
+.vertical li {
+  margin: 10px;
+}
+
+/*** FONTS ***/
+.menu li {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2em;
+}
+
+/* End hamburger */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles home page info boxes */
+.myDiv {
+  overflow: auto;
+  border: 3px outset #ae49f1;
+  background-color: rgb(177, 171, 171);
+  text-align: center;
+  text-align: justify;
+  scroll-behavior: auto;
+}
+
+/* Toggle button */
+.buttons {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  padding: 10px 20px;
+  margin: 15px;
+}
+
+div > button {
+  margin: 0 5px;
+}
+/*End toggle button*/
+
+
+bodyA {
+  font-family: 'Montserrat';
+  font-size: 22px;
+}
+
+
+
+.myContainer {
+  /* display: inline-block; */
+  height: 30px;
+  background-color: #ddd;
+}
+
+.skills {
+  height: 30px;
+  padding-right: 5px;
+  text-align: right;
+  display: inline-block;
+  color: white;
+}
+
+.half-width {
+  width: 50vw;
+}
+
+.html {
+  width: 30%;
+  background-color: #ae49f1;
+}
+
+
+.css {
+  width: 25%;
+  background-color: #ae49f1;
+}
+
+
+.js {
+  width: 15%;
+  background-color: #ae49f1;
+}
+
+
+.php {
+  width: 15%;
+  background-color: #ae49f1;
+}
+
+
+
+
+.column {
+  float: left;
+  width: 40%;
+  height: auto;
+  padding: 15px;
+  /* background-color: rgba(245, 245, 245, 0.81); */
+}
+
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+
+footer {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+
+/* 
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+} */
